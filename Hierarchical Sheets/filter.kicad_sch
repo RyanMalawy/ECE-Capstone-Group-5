@@ -420,7 +420,7 @@
 			(uuid "a1091819-928f-40af-a56f-c830d213e437")
 		)
 		(instances
-			(project ""
+			(project "Capstone"
 				(path "/eb20fb8b-6e33-462b-9505-401dab49dd09/63552873-13f5-4662-99b3-658344f76857"
 					(reference "C1")
 					(unit 1)
@@ -488,7 +488,7 @@
 			(uuid "4e7d2f33-7667-42f9-863f-270379e346f5")
 		)
 		(instances
-			(project ""
+			(project "Capstone"
 				(path "/eb20fb8b-6e33-462b-9505-401dab49dd09/63552873-13f5-4662-99b3-658344f76857"
 					(reference "R1")
 					(unit 1)

@@ -816,7 +816,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "amplifier.kicad_sch"
+		(property "Sheetfile" "Hierarchical Sheets/amplifier.kicad_sch"
 			(at 146.05 38.6846 0)
 			(effects
 				(font
@@ -898,7 +898,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "amplifier.kicad_sch"
+		(property "Sheetfile" "Hierarchical Sheets/amplifier.kicad_sch"
 			(at 146.05 89.4846 0)
 			(effects
 				(font
@@ -980,7 +980,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "amplifier.kicad_sch"
+		(property "Sheetfile" "Hierarchical Sheets/amplifier.kicad_sch"
 			(at 146.05 64.0846 0)
 			(effects
 				(font
@@ -1062,7 +1062,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "amplifier.kicad_sch"
+		(property "Sheetfile" "Hierarchical Sheets/amplifier.kicad_sch"
 			(at 101.6 114.8846 0)
 			(effects
 				(font
@@ -1144,7 +1144,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "amplifier.kicad_sch"
+		(property "Sheetfile" "Hierarchical Sheets/amplifier.kicad_sch"
 			(at 101.6 38.6846 0)
 			(effects
 				(font
@@ -1226,7 +1226,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "amplifier.kicad_sch"
+		(property "Sheetfile" "Hierarchical Sheets/amplifier.kicad_sch"
 			(at 101.6 89.4846 0)
 			(effects
 				(font
@@ -1308,7 +1308,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "amplifier.kicad_sch"
+		(property "Sheetfile" "./Hierarchical Sheets/amplifier.kicad_sch"
 			(at 101.6 64.0846 0)
 			(effects
 				(font
@@ -1390,7 +1390,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "amplifier.kicad_sch"
+		(property "Sheetfile" "Hierarchical Sheets/amplifier.kicad_sch"
 			(at 146.05 114.8846 0)
 			(effects
 				(font
