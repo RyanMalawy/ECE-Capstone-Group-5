@@ -1,0 +1,26 @@
+
+.subckt counter3_ud clk ud b2 b1 b0
+
+* --- edge detector ---
+* Generates a short pulse on rising edge of clk
+Cedge clk edged 1n
+Redge edged 0 1k
+Bedge edge 0 V = (V(edged) > 1) ? 5 : 0
+
+* --- counter memory ---
+Cstate count 0 10n IC=0          ; Small capacitor to store counter
+Rleak count 0 100Meg              ; Very high resistance to avoid floating
+
+* --- inject current on clock edge ---
+* Large enough current to produce visible voltage change
+Binc count 0 I = (V(edge) > 2.5) * ((V(ud) > 2.5) ? 1m : -1m)
+
+* --- limit counter to 0..7 ---
+Bclamp count 0 V = limit(V(count), 0, 7)
+
+* --- decode bits ---
+Bb0 b0 0 V = ((V(count) - 2*floor(V(count)/2)) >= 1) ? 5 : 0
+Bb1 b1 0 V = ((floor(V(count)/2) - 2*floor(V(count)/4)) >= 1) ? 5 : 0
+Bb2 b2 0 V = (V(count) >= 4) ? 5 : 0
+
+.ends counter 3_ud

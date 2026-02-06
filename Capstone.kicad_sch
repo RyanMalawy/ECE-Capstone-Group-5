@@ -1771,15 +1771,15 @@
 		(uuid "1db4e5da-2a77-408d-a42e-797e4b63524e")
 	)
 	(no_connect
-		(at 30.48 78.74)
+		(at 29.21 87.63)
 		(uuid "509c3fab-0419-4cf3-9b4f-f6e5ee0fa9ae")
 	)
 	(no_connect
-		(at 30.48 74.93)
+		(at 29.21 83.82)
 		(uuid "60e7b17a-94d8-4371-bb91-f8d802b05e43")
 	)
 	(no_connect
-		(at 77.47 93.98)
+		(at 76.2 102.87)
 		(uuid "7180283a-d401-44c8-b526-0601ee4675e5")
 	)
 	(no_connect
@@ -1787,23 +1787,23 @@
 		(uuid "7cf14482-d45d-4803-b2f2-1452fb5df64a")
 	)
 	(no_connect
-		(at 30.48 86.36)
+		(at 29.21 95.25)
 		(uuid "8e425878-6fdf-4436-b738-f777f9cc438a")
 	)
 	(no_connect
-		(at 77.47 86.36)
+		(at 76.2 95.25)
 		(uuid "8fe1d26c-a315-4f9e-8315-ffdea156b5da")
 	)
 	(no_connect
-		(at 30.48 82.55)
+		(at 29.21 91.44)
 		(uuid "a0ac5f72-2892-4a09-97e8-9c651eb9a1a8")
 	)
 	(no_connect
-		(at 77.47 90.17)
+		(at 76.2 99.06)
 		(uuid "b0a116bd-f383-4880-a90e-d58e759c3627")
 	)
 	(no_connect
-		(at 77.47 78.74)
+		(at 76.2 87.63)
 		(uuid "cbc38dce-1c95-4c30-9a87-1c8685a36608")
 	)
 	(no_connect
@@ -1811,16 +1811,16 @@
 		(uuid "cc977312-f047-4ce9-97d8-2693531fcf18")
 	)
 	(no_connect
-		(at 77.47 82.55)
+		(at 76.2 91.44)
 		(uuid "dfcede4f-7233-4528-93b5-30aea147c0d7")
 	)
 	(no_connect
-		(at 30.48 93.98)
+		(at 29.21 102.87)
 		(uuid "ecfb1919-f624-49d2-86ea-0a61142d96d1")
 	)
 	(wire
 		(pts
-			(xy 77.47 74.93) (xy 81.28 74.93)
+			(xy 76.2 83.82) (xy 81.28 83.82)
 		)
 		(stroke
 			(width 0)
@@ -1880,7 +1880,7 @@
 	)
 	(wire
 		(pts
-			(xy 81.28 74.93) (xy 81.28 114.3)
+			(xy 81.28 83.82) (xy 81.28 114.3)
 		)
 		(stroke
 			(width 0)
@@ -1940,7 +1940,7 @@
 	)
 	(wire
 		(pts
-			(xy 90.17 73.66) (xy 109.22 73.66)
+			(xy 90.17 82.55) (xy 111.76 82.55)
 		)
 		(stroke
 			(width 0)
@@ -2000,7 +2000,7 @@
 	)
 	(wire
 		(pts
-			(xy 90.17 101.6) (xy 90.17 73.66)
+			(xy 90.17 109.22) (xy 90.17 82.55)
 		)
 		(stroke
 			(width 0)
@@ -2290,7 +2290,7 @@
 	)
 	(wire
 		(pts
-			(xy 30.48 90.17) (xy 27.94 90.17)
+			(xy 29.21 99.06) (xy 27.94 99.06)
 		)
 		(stroke
 			(width 0)
@@ -2300,7 +2300,7 @@
 	)
 	(wire
 		(pts
-			(xy 27.94 90.17) (xy 27.94 101.6)
+			(xy 27.94 99.06) (xy 27.94 109.22)
 		)
 		(stroke
 			(width 0)
@@ -2410,7 +2410,7 @@
 	)
 	(wire
 		(pts
-			(xy 25.4 71.12) (xy 30.48 71.12)
+			(xy 25.4 80.01) (xy 29.21 80.01)
 		)
 		(stroke
 			(width 0)
@@ -2420,7 +2420,7 @@
 	)
 	(wire
 		(pts
-			(xy 25.4 111.76) (xy 25.4 71.12)
+			(xy 25.4 111.76) (xy 25.4 80.01)
 		)
 		(stroke
 			(width 0)
@@ -2540,7 +2540,7 @@
 	)
 	(wire
 		(pts
-			(xy 81.28 71.12) (xy 81.28 60.96)
+			(xy 81.28 80.01) (xy 81.28 60.96)
 		)
 		(stroke
 			(width 0)
@@ -2630,7 +2630,7 @@
 	)
 	(wire
 		(pts
-			(xy 27.94 101.6) (xy 90.17 101.6)
+			(xy 27.94 109.22) (xy 90.17 109.22)
 		)
 		(stroke
 			(width 0)
@@ -2750,16 +2750,6 @@
 	)
 	(wire
 		(pts
-			(xy 109.22 82.55) (xy 109.22 73.66)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "daa3c937-8292-46ad-ad21-e8eddba21593")
-	)
-	(wire
-		(pts
 			(xy 149.86 43.18) (xy 149.86 40.64)
 		)
 		(stroke
@@ -2800,16 +2790,6 @@
 	)
 	(wire
 		(pts
-			(xy 111.76 82.55) (xy 109.22 82.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "edc6f5ba-5899-4be6-9813-b32b38d20899")
-	)
-	(wire
-		(pts
 			(xy 115.57 43.18) (xy 127 43.18)
 		)
 		(stroke
@@ -2820,7 +2800,7 @@
 	)
 	(wire
 		(pts
-			(xy 77.47 71.12) (xy 81.28 71.12)
+			(xy 76.2 80.01) (xy 81.28 80.01)
 		)
 		(stroke
 			(width 0)
@@ -3146,16 +3126,16 @@
 	)
 	(symbol
 		(lib_id "Seeed_Studio_XIAO_Series:XIAO-ESP32-S3-DIP")
-		(at 33.02 66.04 0)
+		(at 31.75 74.93 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "beeb5294-fd10-4768-8dca-b15c2d586a8a")
 		(property "Reference" "U1"
-			(at 54.6481 63.5 0)
+			(at 53.3781 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3163,15 +3143,15 @@
 			)
 		)
 		(property "Value" "XIAO-ESP32-S3-DIP"
-			(at 54.6481 66.04 0)
+			(at 53.3781 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "Seeed_Studio_XIAO_Series:XIAO-ESP32-S3-DIP"
-			(at 50.038 97.79 0)
+		(property "Footprint" "CapstoneFootprints:XIAO-ESP32-S3-DIP"
+			(at 48.768 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3180,7 +3160,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 33.02 66.04 0)
+			(at 31.75 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3189,7 +3169,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 33.02 66.04 0)
+			(at 31.75 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3295,6 +3275,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 111.76 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" ".\\"
 			(at 111.76 80.01 0)
 			(effects
 				(font
