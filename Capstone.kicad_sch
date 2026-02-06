@@ -2994,7 +2994,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_SO:SOIC-16W_5.3x10.2mm_P1.27mm"
+		(property "Footprint" "CapstoneFootprints:D16"
 			(at 167.64 43.18 0)
 			(effects
 				(font
@@ -3274,7 +3274,7 @@
 				)
 			)
 		)
-		(property "Footprint" "D16"
+		(property "Footprint" "CapstoneFootprints:D16"
 			(at 111.76 80.01 0)
 			(effects
 				(font
