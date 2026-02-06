@@ -372,8 +372,8 @@
 		)
 		(symbol "SN74HC161DR_1_1"
 			(rectangle
-				(start 7.62 3.81)
-				(end 25.4 -21.59)
+				(start 7.62 2.54)
+				(end 25.4 -20.32)
 				(stroke
 					(width 0)
 					(type solid)
