@@ -663,6 +663,16 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "General 2 Instrumentation Amplifier Topology from --\n\nThe Instrumentation\nAmplifier Handbook\n\nBy: Neil P. Albaugh\nBurr- Brown Corporation\nTucson, Arizona"
+		(exclude_from_sim no)
+		(at 250.952 30.48 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "73327861-d609-4f65-be5b-5ade7ac09979")
+	)
 	(junction
 		(at 158.75 72.39)
 		(diameter 0)
