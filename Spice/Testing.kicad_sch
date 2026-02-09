@@ -1175,7 +1175,7 @@
 			(embedded_fonts no)
 		)
 	)
-	(text ".tran 0.1u 200u"
+	(text ".tran 0.1u 10m"
 		(exclude_from_sim no)
 		(at 142.24 43.434 0)
 		(effects
@@ -1190,6 +1190,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "41177d56-f0b9-466d-934f-73e12eb76626")
+	)
+	(junction
+		(at 148.59 101.6)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4c75f228-d511-45f2-947c-8781e15cef26")
 	)
 	(junction
 		(at 203.2 57.15)
@@ -1238,6 +1244,16 @@
 			(type default)
 		)
 		(uuid "12692b07-327c-4468-b160-1894f1fc9b57")
+	)
+	(wire
+		(pts
+			(xy 148.59 52.07) (xy 148.59 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "12a662f0-249b-4011-8f6f-cd5c1e50eb13")
 	)
 	(wire
 		(pts
@@ -1311,7 +1327,7 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 69.85) (xy 114.3 69.85)
+			(xy 116.84 49.53) (xy 114.3 49.53)
 		)
 		(stroke
 			(width 0)
@@ -1328,16 +1344,6 @@
 			(type default)
 		)
 		(uuid "626763af-f640-4d21-9a22-41b062cbcb6e")
-	)
-	(wire
-		(pts
-			(xy 128.27 69.85) (xy 128.27 77.47)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "637dba53-79b8-4145-b312-053ce8dbc61b")
 	)
 	(wire
 		(pts
@@ -1361,6 +1367,16 @@
 	)
 	(wire
 		(pts
+			(xy 161.29 74.93) (xy 163.83 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "86420296-94c2-4577-b039-f252199f8ed6")
+	)
+	(wire
+		(pts
 			(xy 114.3 90.17) (xy 114.3 101.6)
 		)
 		(stroke
@@ -1378,6 +1394,16 @@
 			(type default)
 		)
 		(uuid "8bea0357-afcc-4791-9938-927d580bd96d")
+	)
+	(wire
+		(pts
+			(xy 148.59 101.6) (xy 181.61 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8e8fe1d9-787a-4ff5-b037-c53b07c6e13d")
 	)
 	(wire
 		(pts
@@ -1411,7 +1437,7 @@
 	)
 	(wire
 		(pts
-			(xy 127 69.85) (xy 128.27 69.85)
+			(xy 127 49.53) (xy 148.59 49.53)
 		)
 		(stroke
 			(width 0)
@@ -1421,7 +1447,7 @@
 	)
 	(wire
 		(pts
-			(xy 114.3 69.85) (xy 114.3 90.17)
+			(xy 114.3 49.53) (xy 114.3 90.17)
 		)
 		(stroke
 			(width 0)
@@ -1431,23 +1457,13 @@
 	)
 	(wire
 		(pts
-			(xy 114.3 101.6) (xy 181.61 101.6)
+			(xy 114.3 101.6) (xy 148.59 101.6)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "c52da192-c6f1-40d5-a872-a6578b84e826")
-	)
-	(wire
-		(pts
-			(xy 128.27 77.47) (xy 135.89 77.47)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cc68a617-784e-48b6-9702-9dd409c2bcda")
 	)
 	(wire
 		(pts
@@ -1458,6 +1474,16 @@
 			(type default)
 		)
 		(uuid "d2a7f689-1a88-4196-aceb-6eb3c1610036")
+	)
+	(wire
+		(pts
+			(xy 163.83 67.31) (xy 161.29 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d5de326f-ab41-4666-9bf6-399ecea8c1a7")
 	)
 	(wire
 		(pts
@@ -1478,6 +1504,16 @@
 			(type default)
 		)
 		(uuid "ebda0b74-671d-49c3-bc2f-bf2333ea5f91")
+	)
+	(wire
+		(pts
+			(xy 148.59 97.79) (xy 148.59 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ec572289-09aa-4ee7-b2a0-91b8d2f2e36c")
 	)
 	(wire
 		(pts
@@ -1724,7 +1760,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Params" "y1=0 y2=5 td=0 tr=1u tf=1u tw=5u per=10u"
+		(property "Sim.Params" "y1=0 y2=5 td=10u tr=1u tf=1u tw=50u per=100u"
 			(at 122.0498 85.09 90)
 			(effects
 				(font
@@ -2031,7 +2067,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Name" "counter3_ud"
+		(property "Sim.Name" "BIN4_COUNTER"
 			(at 148.59 74.93 0)
 			(effects
 				(font
@@ -2049,7 +2085,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Pins" "1=ud 2=clk 12=b2 13=b1 14=b0"
+		(property "Sim.Pins" "2=CLK 11=Q3 12=Q2 13=Q1 14=Q0 15=RST"
 			(at 148.59 74.93 0)
 			(effects
 				(font
@@ -2202,8 +2238,78 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 163.83 71.12 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a532cc66-b99f-41a6-991c-104ed4b18130")
+		(property "Reference" "R1"
+			(at 166.37 69.8499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "10k"
+			(at 166.37 72.3899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 165.608 71.12 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 163.83 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 163.83 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9ea365e8-a482-4cab-955c-5c1a6ed4c9ce")
+		)
+		(pin "2"
+			(uuid "0673c942-6d52-45a4-a9b6-2187ddf35b6f")
+		)
+		(instances
+			(project "Testing"
+				(path "/3cc8ea43-d255-4f42-bfa7-b36af2da9d12"
+					(reference "R1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Simulation_SPICE:VDC")
-		(at 121.92 69.85 270)
+		(at 121.92 49.53 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2212,7 +2318,7 @@
 		(fields_autoplaced yes)
 		(uuid "d862b655-4571-4f82-94d6-8f5ac46fec3d")
 		(property "Reference" "V2"
-			(at 122.0498 62.23 90)
+			(at 122.0498 41.91 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2220,7 +2326,7 @@
 			)
 		)
 		(property "Value" "5"
-			(at 122.0498 64.77 90)
+			(at 122.0498 44.45 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2228,7 +2334,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 121.92 69.85 0)
+			(at 121.92 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2237,7 +2343,7 @@
 			)
 		)
 		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#sec_Independent_Sources_for"
-			(at 121.92 69.85 0)
+			(at 121.92 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2246,7 +2352,7 @@
 			)
 		)
 		(property "Description" "Voltage source, DC"
-			(at 121.92 69.85 0)
+			(at 121.92 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2255,7 +2361,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=+ 2=-"
-			(at 121.92 69.85 0)
+			(at 121.92 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2264,7 +2370,7 @@
 			)
 		)
 		(property "Sim.Type" "DC"
-			(at 121.92 69.85 0)
+			(at 121.92 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2273,7 +2379,7 @@
 			)
 		)
 		(property "Sim.Device" "V"
-			(at 121.92 69.85 0)
+			(at 121.92 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)

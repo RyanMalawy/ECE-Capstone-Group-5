@@ -1,26 +1,49 @@
+* 4-bit binary counter subcircuit
+* Inputs: CLK (clock), RST (reset)
+* Outputs: Q0-Q3 (counter bits)
 
-.subckt counter3_ud clk ud b2 b1 b0
+.SUBCKT BIN4_COUNTER CLK RST Q0 Q1 Q2 Q3
 
-* --- edge detector ---
-* Generates a short pulse on rising edge of clk
-Cedge clk edged 1n
-Redge edged 0 1k
-Bedge edge 0 V = (V(edged) > 1) ? 5 : 0
+* Internal nodes
+* D flip-flops: FF0, FF1, FF2, FF3
+* We use simple D-FF model with async reset
 
-* --- counter memory ---
-Cstate count 0 10n IC=0          ; Small capacitor to store counter
-Rleak count 0 100Meg              ; Very high resistance to avoid floating
+* FF0 - LSB
+XFF0 DFF CLK RST Q0
 
-* --- inject current on clock edge ---
-* Large enough current to produce visible voltage change
-Binc count 0 I = (V(edge) > 2.5) * ((V(ud) > 2.5) ? 1m : -1m)
+* FF1
+XFF1 DFF CLK Q0 Q1
 
-* --- limit counter to 0..7 ---
-Bclamp count 0 V = limit(V(count), 0, 7)
+* FF2
+XFF2 DFF CLK Q1 Q2
 
-* --- decode bits ---
-Bb0 b0 0 V = ((V(count) - 2*floor(V(count)/2)) >= 1) ? 5 : 0
-Bb1 b1 0 V = ((floor(V(count)/2) - 2*floor(V(count)/4)) >= 1) ? 5 : 0
-Bb2 b2 0 V = (V(count) >= 4) ? 5 : 0
+* FF3 - MSB
+XFF3 DFF CLK Q2 Q3
 
-.ends counter 3_ud
+.ENDS BIN4_COUNTER
+
+*-------------------------
+* D Flip-Flop with async reset
+* D input, CLK, RST, Q output
+* Simple behavioral model using voltage-controlled switch
+*-------------------------
+.SUBCKT DFF D CLK RST Q
+* DFF modeled with a voltage-controlled switch and capacitor to hold state
+* Nodes: D, CLK, RST, Q
+.PARAM VDD=5
+
+* Reset dominates
+B_RST Q 0 V=IF(V(RST)>2.5,0,V(Q))
+
+* On rising clock edge, latch D into Q
+* Using edge detection
+* This is a simplified behavioral model
+B_D Q 0 V=V(Q) + IF((V(CLK)>2.5 && V(CLK_prev)<2.5),V(D)-V(Q),0)
+
+* Memory capacitor
+Cmem Q 0 1p
+
+* Dummy node for previous clock
+E_CLK_prev CLK_prev 0 VALUE={V(CLK)}
+
+.ENDS DFF
