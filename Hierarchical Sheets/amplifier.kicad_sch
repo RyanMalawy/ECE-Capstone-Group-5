@@ -5,6 +5,493 @@
 	(uuid "5a16f662-1efd-4dfc-b103-36ef5e9fcbee")
 	(paper "A4")
 	(lib_symbols
+		(symbol "Amplifier_Instrumentation:INA326"
+			(pin_names
+				(offset 0.127)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at 3.81 3.175 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "INA326"
+				(at 3.81 -3.175 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Package_SO:MSOP-8_3x3mm_P0.65mm"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "http://www.ti.com/lit/ds/symlink/ina326.pdf"
+				(at 2.54 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Precision, Rail-to-Rail I/O Instrumentation Amplifier, MSOP-8 package"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "instrumentation opamp"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "MSOP*3x3mm*P0.65mm*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "INA326_0_1"
+				(polyline
+					(pts
+						(xy 7.62 0) (xy -5.08 6.35) (xy -5.08 -6.35) (xy 7.62 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "INA326_1_1"
+				(pin input line
+					(at -7.62 5.08 0)
+					(length 2.54)
+					(name "+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -7.62 2.54 0)
+					(length 2.54)
+					(name "R1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -7.62 -2.54 0)
+					(length 2.54)
+					(name "R1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -7.62 -5.08 0)
+					(length 2.54)
+					(name "-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 7.62 270)
+					(length 3.81)
+					(name "V+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -7.62 90)
+					(length 3.81)
+					(name "V-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 2.54 -7.62 90)
+					(length 5.08)
+					(name "R2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 10.16 0 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Amplifier_Operational:LM358"
+			(pin_names
+				(offset 0.127)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "LM358"
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Low-Power, Dual Operational Amplifiers, DIP-8/SOIC-8/TO-99-8"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "dual opamp"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "SOIC*3.9x4.9mm*P1.27mm* DIP*W7.62mm* TO*99* OnSemi*Micro8* TSSOP*3x3mm*P0.65mm* TSSOP*4.4x3mm*P0.65mm* MSOP*3x3mm*P0.65mm* SSOP*3.9x4.9mm*P0.635mm* LFCSP*2x2mm*P0.5mm* *SIP* SOIC*5.3x6.2mm*P1.27mm*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "LM358_1_1"
+				(polyline
+					(pts
+						(xy -5.08 5.08) (xy 5.08 0) (xy -5.08 -5.08) (xy -5.08 5.08)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin input line
+					(at -7.62 2.54 0)
+					(length 2.54)
+					(name "+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -7.62 -2.54 0)
+					(length 2.54)
+					(name "-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "LM358_2_1"
+				(polyline
+					(pts
+						(xy -5.08 5.08) (xy 5.08 0) (xy -5.08 -5.08) (xy -5.08 5.08)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin input line
+					(at -7.62 2.54 0)
+					(length 2.54)
+					(name "+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -7.62 -2.54 0)
+					(length 2.54)
+					(name "-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "LM358_3_1"
+				(pin power_in line
+					(at -2.54 7.62 270)
+					(length 3.81)
+					(name "V+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -2.54 -7.62 90)
+					(length 3.81)
+					(name "V-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:R"
 			(pin_numbers
 				(hide yes)
@@ -663,6 +1150,26 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "Possibly use buffer for low input impedance.\n\nNecessary for Zin < 5ohms"
+		(exclude_from_sim no)
+		(at 197.612 146.304 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "1ed923b1-f99c-4d3b-9d83-452f0d966c6d")
+	)
+	(text "INA350CDS\n\nGain Select (GS) Low : 30V/V"
+		(exclude_from_sim no)
+		(at 177.8 94.488 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "3339a00d-1aa7-4aca-acd2-76a9b3625c91")
+	)
 	(text "Need Transducer Specs: voltage swing, output impedance, etc."
 		(exclude_from_sim no)
 		(at 93.218 94.996 0)
@@ -722,6 +1229,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "da6f0a7f-05de-49a0-b112-ec23c5af8ce2")
+	)
+	(junction
+		(at 185.42 130.81)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "dc7b67c6-6333-4c8f-9a89-ca15ca8a4dfa")
 	)
 	(junction
 		(at 118.11 69.85)
@@ -861,6 +1374,16 @@
 	)
 	(wire
 		(pts
+			(xy 203.2 128.27) (xy 217.17 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "63b8643a-d3ae-4896-b556-842b3018f5fe")
+	)
+	(wire
+		(pts
 			(xy 139.7 53.34) (xy 139.7 69.85)
 		)
 		(stroke
@@ -901,6 +1424,26 @@
 	)
 	(wire
 		(pts
+			(xy 217.17 128.27) (xy 217.17 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "95c02d78-e8b3-4f47-8b1e-50876d2fe3be")
+	)
+	(wire
+		(pts
+			(xy 203.2 139.7) (xy 185.42 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "99817e91-437a-48ed-a60f-4d656bb1c14c")
+	)
+	(wire
+		(pts
 			(xy 158.75 53.34) (xy 158.75 72.39)
 		)
 		(stroke
@@ -921,6 +1464,26 @@
 	)
 	(wire
 		(pts
+			(xy 180.34 130.81) (xy 180.34 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ae200b78-485d-4f83-b4d6-c51f65d14b05")
+	)
+	(wire
+		(pts
+			(xy 203.2 133.35) (xy 203.2 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ae48f480-e452-4554-a9bd-4023b3048594")
+	)
+	(wire
+		(pts
 			(xy 139.7 53.34) (xy 146.05 53.34)
 		)
 		(stroke
@@ -928,6 +1491,26 @@
 			(type default)
 		)
 		(uuid "ae7959c9-2096-4cde-94ce-c2c72d7d1ba5")
+	)
+	(wire
+		(pts
+			(xy 185.42 139.7) (xy 185.42 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c34d6997-e96c-4d3d-92ae-29e9eb0a9d3c")
+	)
+	(wire
+		(pts
+			(xy 185.42 130.81) (xy 187.96 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e3a29585-8aad-4df6-9269-d48af1dafb7a")
 	)
 	(wire
 		(pts
@@ -981,6 +1564,16 @@
 	)
 	(wire
 		(pts
+			(xy 185.42 130.81) (xy 180.34 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fdf29e78-853e-4dd4-b571-e84464611216")
+	)
+	(wire
+		(pts
 			(xy 90.17 67.31) (xy 93.98 67.31)
 		)
 		(stroke
@@ -998,6 +1591,122 @@
 			(justify left bottom)
 		)
 		(uuid "edaca23f-3a72-4b38-96b5-d233463d782e")
+	)
+	(hierarchical_label "5VDC"
+		(shape input)
+		(at 217.17 119.38 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "6c6682c5-6a6b-4502-a192-8e076a956ca9")
+	)
+	(hierarchical_label "5VDC"
+		(shape input)
+		(at 177.8 106.68 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b6acd62f-904d-41d0-bd1c-dbc41a24901d")
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 177.8 121.92 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "03fcc598-e0bc-4fd6-ae7a-a684ab9b165f")
+		(property "Reference" "#PWR018"
+			(at 177.8 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 177.8 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 177.8 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 177.8 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 177.8 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "01a25b6c-0ee8-4852-a178-2c1b03e21c50")
+		)
+		(instances
+			(project ""
+				(path "/eb20fb8b-6e33-462b-9505-401dab49dd09/c48a3149-0db5-4f51-8f7c-d62a83337e21/1fd7814c-bf78-4168-8615-5c3b0fc9b0ad"
+					(reference "#PWR025")
+					(unit 1)
+				)
+				(path "/eb20fb8b-6e33-462b-9505-401dab49dd09/c48a3149-0db5-4f51-8f7c-d62a83337e21/38d387e9-625d-463c-9a0f-4cb3349aa826"
+					(reference "#PWR023")
+					(unit 1)
+				)
+				(path "/eb20fb8b-6e33-462b-9505-401dab49dd09/c48a3149-0db5-4f51-8f7c-d62a83337e21/55a662ea-90fb-421c-a8a2-023fee80625b"
+					(reference "#PWR022")
+					(unit 1)
+				)
+				(path "/eb20fb8b-6e33-462b-9505-401dab49dd09/c48a3149-0db5-4f51-8f7c-d62a83337e21/6edbc10b-b01d-4def-ba7e-a909c19f70ca"
+					(reference "#PWR020")
+					(unit 1)
+				)
+				(path "/eb20fb8b-6e33-462b-9505-401dab49dd09/c48a3149-0db5-4f51-8f7c-d62a83337e21/72bb2763-076a-4e12-957a-4da986febf3b"
+					(reference "#PWR021")
+					(unit 1)
+				)
+				(path "/eb20fb8b-6e33-462b-9505-401dab49dd09/c48a3149-0db5-4f51-8f7c-d62a83337e21/b051ea0c-81d9-4bc7-8142-5402a0c1e1da"
+					(reference "#PWR019")
+					(unit 1)
+				)
+				(path "/eb20fb8b-6e33-462b-9505-401dab49dd09/c48a3149-0db5-4f51-8f7c-d62a83337e21/b9769e2e-c022-46e5-9c9b-4415c0eab55d"
+					(reference "#PWR018")
+					(unit 1)
+				)
+				(path "/eb20fb8b-6e33-462b-9505-401dab49dd09/c48a3149-0db5-4f51-8f7c-d62a83337e21/daf83055-0ab7-48b9-a756-ec73eea06236"
+					(reference "#PWR024")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
@@ -1758,6 +2467,120 @@
 		)
 	)
 	(symbol
+		(lib_id "Amplifier_Operational:LM358")
+		(at 195.58 130.81 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7d5d09df-b485-4bde-ad9b-13d595cc2211")
+		(property "Reference" "U28"
+			(at 195.58 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LM358"
+			(at 195.58 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 195.58 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf"
+			(at 195.58 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Low-Power, Dual Operational Amplifiers, DIP-8/SOIC-8/TO-99-8"
+			(at 195.58 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "8483c657-feab-4ca6-8968-f73326b7e01e")
+		)
+		(pin "4"
+			(uuid "6320d80f-8353-4def-890b-35313c4c95a0")
+		)
+		(pin "5"
+			(uuid "2a0cb9f2-7359-4967-8a5a-31fd429a6395")
+		)
+		(pin "1"
+			(uuid "5b0625e3-891a-460a-95fc-b86298e92318")
+		)
+		(pin "8"
+			(uuid "f6804825-dc7f-4f63-960a-d0a179119838")
+		)
+		(pin "7"
+			(uuid "fc206677-ca78-427b-88d6-84a78586582d")
+		)
+		(pin "3"
+			(uuid "6c1956ca-6a0e-4691-a68f-68eeff4319d5")
+		)
+		(pin "6"
+			(uuid "d03be4f1-a304-4789-895c-3c7da311e1f5")
+		)
+		(instances
+			(project ""
+				(path "/eb20fb8b-6e33-462b-9505-401dab49dd09/c48a3149-0db5-4f51-8f7c-d62a83337e21/1fd7814c-bf78-4168-8615-5c3b0fc9b0ad"
+					(reference "U35")
+					(unit 1)
+				)
+				(path "/eb20fb8b-6e33-462b-9505-401dab49dd09/c48a3149-0db5-4f51-8f7c-d62a83337e21/38d387e9-625d-463c-9a0f-4cb3349aa826"
+					(reference "U33")
+					(unit 1)
+				)
+				(path "/eb20fb8b-6e33-462b-9505-401dab49dd09/c48a3149-0db5-4f51-8f7c-d62a83337e21/55a662ea-90fb-421c-a8a2-023fee80625b"
+					(reference "U32")
+					(unit 1)
+				)
+				(path "/eb20fb8b-6e33-462b-9505-401dab49dd09/c48a3149-0db5-4f51-8f7c-d62a83337e21/6edbc10b-b01d-4def-ba7e-a909c19f70ca"
+					(reference "U30")
+					(unit 1)
+				)
+				(path "/eb20fb8b-6e33-462b-9505-401dab49dd09/c48a3149-0db5-4f51-8f7c-d62a83337e21/72bb2763-076a-4e12-957a-4da986febf3b"
+					(reference "U31")
+					(unit 1)
+				)
+				(path "/eb20fb8b-6e33-462b-9505-401dab49dd09/c48a3149-0db5-4f51-8f7c-d62a83337e21/b051ea0c-81d9-4bc7-8142-5402a0c1e1da"
+					(reference "U29")
+					(unit 1)
+				)
+				(path "/eb20fb8b-6e33-462b-9505-401dab49dd09/c48a3149-0db5-4f51-8f7c-d62a83337e21/b9769e2e-c022-46e5-9c9b-4415c0eab55d"
+					(reference "U28")
+					(unit 1)
+				)
+				(path "/eb20fb8b-6e33-462b-9505-401dab49dd09/c48a3149-0db5-4f51-8f7c-d62a83337e21/daf83055-0ab7-48b9-a756-ec73eea06236"
+					(reference "U34")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 149.86 53.34 270)
 		(unit 1)
@@ -1848,6 +2671,121 @@
 				)
 				(path "/eb20fb8b-6e33-462b-9505-401dab49dd09/c48a3149-0db5-4f51-8f7c-d62a83337e21/daf83055-0ab7-48b9-a756-ec73eea06236"
 					(reference "R8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Amplifier_Instrumentation:INA326")
+		(at 177.8 114.3 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8fbae65b-5bcb-4435-a293-d4d1a46f2fbb")
+		(property "Reference" "U2"
+			(at 190.5 107.8798 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "INA326"
+			(at 190.5 110.4198 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:MSOP-8_3x3mm_P0.65mm"
+			(at 177.8 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/ina326.pdf"
+			(at 180.34 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Precision, Rail-to-Rail I/O Instrumentation Amplifier, MSOP-8 package"
+			(at 177.8 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "89544690-6160-4d25-88e5-9c03ce8470c3")
+		)
+		(pin "3"
+			(uuid "b44646a3-e01d-4da5-88f7-18d6364d0f86")
+		)
+		(pin "5"
+			(uuid "3a936b6c-f0a6-46bb-ba03-984072d34381")
+		)
+		(pin "4"
+			(uuid "f875d901-dafb-4d5a-a53a-7761bada399a")
+		)
+		(pin "8"
+			(uuid "59f1bb92-963f-4ad8-9bf8-6cd2eb105c9e")
+		)
+		(pin "7"
+			(uuid "61de67b2-ee72-4f6c-a6c3-c39abb08bae0")
+		)
+		(pin "1"
+			(uuid "0de86ee2-23a2-4d29-8837-2488c49e7055")
+		)
+		(pin "6"
+			(uuid "b1b6215e-3e59-4b18-98f8-8d69b807cd3c")
+		)
+		(instances
+			(project ""
+				(path "/eb20fb8b-6e33-462b-9505-401dab49dd09/c48a3149-0db5-4f51-8f7c-d62a83337e21/1fd7814c-bf78-4168-8615-5c3b0fc9b0ad"
+					(reference "U10")
+					(unit 1)
+				)
+				(path "/eb20fb8b-6e33-462b-9505-401dab49dd09/c48a3149-0db5-4f51-8f7c-d62a83337e21/38d387e9-625d-463c-9a0f-4cb3349aa826"
+					(reference "U8")
+					(unit 1)
+				)
+				(path "/eb20fb8b-6e33-462b-9505-401dab49dd09/c48a3149-0db5-4f51-8f7c-d62a83337e21/55a662ea-90fb-421c-a8a2-023fee80625b"
+					(reference "U7")
+					(unit 1)
+				)
+				(path "/eb20fb8b-6e33-462b-9505-401dab49dd09/c48a3149-0db5-4f51-8f7c-d62a83337e21/6edbc10b-b01d-4def-ba7e-a909c19f70ca"
+					(reference "U5")
+					(unit 1)
+				)
+				(path "/eb20fb8b-6e33-462b-9505-401dab49dd09/c48a3149-0db5-4f51-8f7c-d62a83337e21/72bb2763-076a-4e12-957a-4da986febf3b"
+					(reference "U6")
+					(unit 1)
+				)
+				(path "/eb20fb8b-6e33-462b-9505-401dab49dd09/c48a3149-0db5-4f51-8f7c-d62a83337e21/b051ea0c-81d9-4bc7-8142-5402a0c1e1da"
+					(reference "U4")
+					(unit 1)
+				)
+				(path "/eb20fb8b-6e33-462b-9505-401dab49dd09/c48a3149-0db5-4f51-8f7c-d62a83337e21/b9769e2e-c022-46e5-9c9b-4415c0eab55d"
+					(reference "U2")
+					(unit 1)
+				)
+				(path "/eb20fb8b-6e33-462b-9505-401dab49dd09/c48a3149-0db5-4f51-8f7c-d62a83337e21/daf83055-0ab7-48b9-a756-ec73eea06236"
+					(reference "U9")
 					(unit 1)
 				)
 			)
