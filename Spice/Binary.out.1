@@ -1,0 +1,64 @@
+
+**** 02/09/26 14:23:46 **** PSpice 22.1.0 (6 October 2022) **** ID# 0 ********
+
+ * 4-bit binary counter subcircuit
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+* Inputs: CLK (clock), RST (reset)
+* Outputs: Q0-Q3 (counter bits)
+
+.SUBCKT BIN4_COUNTER CLK RST Q0 Q1 Q2 Q3
+
+* Internal nodes
+* D flip-flops: FF0, FF1, FF2, FF3
+* We use simple D-FF model with async reset
+
+* FF0 - LSB
+XFF0 DFF CLK RST Q0
+
+* FF1
+XFF1 DFF CLK Q0 Q1
+
+* FF2
+XFF2 DFF CLK Q1 Q2
+
+* FF3 - MSB
+XFF3 DFF CLK Q2 Q3
+
+.ENDS BIN4_COUNTER
+
+*-------------------------
+* D Flip-Flop with async reset
+* D input, CLK, RST, Q output
+* Simple behavioral model using voltage-controlled switch
+*-------------------------
+.SUBCKT DFF D CLK RST Q
+* DFF modeled with a voltage-controlled switch and capacitor to hold state
+* Nodes: D, CLK, RST, Q
+.PARAM VDD=5
+
+* Reset dominates
+B_RST Q 0 V=IF(V(RST)>2.5,0,V(Q))
+
+* On rising clock edge, latch D into Q
+* Using edge detection
+* This is a simplified behavioral model
+B_D Q 0 V=V(Q) + IF((V(CLK)>2.5 && V(CLK_prev)<2.5),V(D)-V(Q),0)
+
+* Memory capacitor
+Cmem Q 0 1p
+
+* Dummy node for previous clock
+E_CLK_prev CLK_prev 0 VALUE={V(CLK)}
+
+.ENDS DFF
+
+WARNING(ORPSIM-15188): There are no devices in this circuit
+
