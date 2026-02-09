@@ -1,0 +1,16 @@
+LTspice 26.0.1 for Windows
+Circuit: C:\Users\ramc9m\Documents\LTspice\BinaryCounter.net
+Start Time: Mon Feb  9 16:04:23 2026
+solver = Normal
+Maximum thread count: 16
+tnom = 27
+temp = 27
+method = trap
+Direct Newton iteration succeeded in finding operating point.
+Total elapsed time: 0.346 seconds.
+
+Files loaded:
+C:\Users\ramc9m\Documents\LTspice\BinaryCounter.net
+C:\Users\ramc9m\AppData\Local\LTspice\lib\cmp\standard.dio
+C:\Users\ramc9m\Documents\LTspice\74hc.lib
+
