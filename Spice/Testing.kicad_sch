@@ -2565,43 +2565,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Library" "C:\\Users\\ramc9m\\Downloads\\74hc.lib"
-			(at 124.46 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Name" "74HC161"
-			(at 124.46 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "SUBCKT"
-			(at 124.46 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=MR 2=CP 3=D0 4=D1 5=D2 6=D3 7=CEP 8=VGND 9=PE 10=CET 11=Q3 12=Q2 13=Q1 14=Q0 15=TC 16=VCC"
-			(at 124.46 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Params" "vcc1=5 speed1=1 tripdt1=0"
+		(property "Sim.Library" ".\\"
 			(at 124.46 54.61 0)
 			(effects
 				(font
