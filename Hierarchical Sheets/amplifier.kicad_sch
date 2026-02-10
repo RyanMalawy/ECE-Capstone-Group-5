@@ -5,239 +5,6 @@
 	(uuid "5a16f662-1efd-4dfc-b103-36ef5e9fcbee")
 	(paper "A4")
 	(lib_symbols
-		(symbol "Amplifier_Instrumentation:INA326"
-			(pin_names
-				(offset 0.127)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "U"
-				(at 3.81 3.175 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "INA326"
-				(at 3.81 -3.175 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" "Package_SO:MSOP-8_3x3mm_P0.65mm"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "http://www.ti.com/lit/ds/symlink/ina326.pdf"
-				(at 2.54 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Precision, Rail-to-Rail I/O Instrumentation Amplifier, MSOP-8 package"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "instrumentation opamp"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "MSOP*3x3mm*P0.65mm*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "INA326_0_1"
-				(polyline
-					(pts
-						(xy 7.62 0) (xy -5.08 6.35) (xy -5.08 -6.35) (xy 7.62 0)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-			)
-			(symbol "INA326_1_1"
-				(pin input line
-					(at -7.62 5.08 0)
-					(length 2.54)
-					(name "+"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -7.62 2.54 0)
-					(length 2.54)
-					(name "R1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -7.62 -2.54 0)
-					(length 2.54)
-					(name "R1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -7.62 -5.08 0)
-					(length 2.54)
-					(name "-"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 7.62 270)
-					(length 3.81)
-					(name "V+"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 -7.62 90)
-					(length 3.81)
-					(name "V-"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 2.54 -7.62 90)
-					(length 5.08)
-					(name "R2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 10.16 0 180)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Amplifier_Operational:LM358"
 			(pin_names
 				(offset 0.127)
@@ -609,6 +376,652 @@
 						(effects
 							(font
 								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "INA350CDSIDSGR:INA350CDSIDSGR"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at -15.24 16.002 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Value" "INA350CDSIDSGR"
+				(at -15.24 -20.32 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Footprint" "INA350CDSIDSGR:IC_INA350CDSIDSGR"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "MF" "Texas Instruments"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "MAXIMUM_PACKAGE_HEIGHT" "0.8mm"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Package" "WSON-8 Texas Instruments"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Price" "None"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Check_prices" "https://www.snapeda.com/parts/INA350CDSIDSGR/Texas+Instruments/view-part/?ref=eda"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "STANDARD" "Manufacturer Recommendations"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "PARTREV" "B"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "SnapEDA_Link" "https://www.snapeda.com/parts/INA350CDSIDSGR/Texas+Instruments/view-part/?ref=snap"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "MP" "INA350CDSIDSGR"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Purchase-URL" "https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=12124363&manufacturer=Texas Instruments&part_name=INA350CDSIDSGR&search_term=ina350"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Description_1" "Low-power (100 µA) selectable-gain instrumentation amplifier available in 8-pin WSON (2 mm by 2 mm)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "SNAPEDA_PN" "INA350CDSIDSGR"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Availability" "In Stock"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "MANUFACTURER" "Texas Instruments"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(symbol "INA350CDSIDSGR_0_0"
+				(rectangle
+					(start -15.24 -17.78)
+					(end 15.24 15.24)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy -8.89 2.54) (xy -7.62 2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -8.89 -2.54) (xy -7.62 -2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -7.62 5.08) (xy -7.62 2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -7.62 2.54) (xy -7.62 -2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -7.62 -2.54) (xy -7.62 -5.08)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -7.62 -5.08) (xy -5.08 -3.81)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.08 12.7) (xy -5.08 3.81)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.08 12.7) (xy 7.62 12.7)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.08 3.81) (xy -7.62 5.08)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.08 -3.81) (xy -5.08 -10.16)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.08 -3.81) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 2.54) (xy -5.08 3.81)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 2.54) (xy -2.54 7.62)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 5.08) (xy 0 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 1.27) (xy -2.54 2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -1.27) (xy 2.54 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -5.08) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 0) (xy 0 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 0) (xy 7.62 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 7.62) (xy -2.54 7.62)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 5.08) (xy 0 5.08)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 -5.08) (xy 0 -5.08)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 -10.16) (xy -5.08 -10.16)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin input line
+					(at -20.32 2.54 0)
+					(length 5.08)
+					(name "IN+"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -20.32 -2.54 0)
+					(length 5.08)
+					(name "IN-"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 20.32 12.7 180)
+					(length 5.08)
+					(name "V+"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 20.32 7.62 180)
+					(length 5.08)
+					(name "~{SHDN}"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 20.32 5.08 180)
+					(length 5.08)
+					(name "GS"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 20.32 0 180)
+					(length 5.08)
+					(name "OUT"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 20.32 -5.08 180)
+					(length 5.08)
+					(name "REF"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 20.32 -10.16 180)
+					(length 5.08)
+					(name "V-"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 20.32 -15.24 180)
+					(length 5.08)
+					(name "EXP"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.016 1.016)
 							)
 						)
 					)
@@ -1150,9 +1563,9 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "Possibly use buffer for low input impedance at the REF pin.\n\nNecessary for Zin < 5ohms"
+	(text "Possibly use buffer Op Amp for\nlow input impedance at the REF pin.\n\nNecessary that Zin < 5ohms"
 		(exclude_from_sim no)
-		(at 224.282 145.034 0)
+		(at 260.858 104.394 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1162,7 +1575,7 @@
 	)
 	(text "INA350CDS\n\nGain Select (GS) Low : 30V/V"
 		(exclude_from_sim no)
-		(at 204.47 93.218 0)
+		(at 202.438 78.74 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1213,6 +1626,12 @@
 		(uuid "32f28593-a9b7-452e-9d97-7768c62576b3")
 	)
 	(junction
+		(at 215.9 109.22)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3d060ae9-5279-4699-9c09-f207f294d02c")
+	)
+	(junction
 		(at 111.76 63.5)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1229,12 +1648,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "da6f0a7f-05de-49a0-b112-ec23c5af8ce2")
-	)
-	(junction
-		(at 212.09 129.54)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "dc7b67c6-6333-4c8f-9a89-ca15ca8a4dfa")
 	)
 	(junction
 		(at 90.17 63.5)
@@ -1284,6 +1697,16 @@
 	)
 	(wire
 		(pts
+			(xy 209.55 114.3) (xy 200.66 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "21140bfc-167d-4fac-b4cf-a6d287b10996")
+	)
+	(wire
+		(pts
 			(xy 43.18 60.96) (xy 48.26 60.96)
 		)
 		(stroke
@@ -1301,6 +1724,26 @@
 			(type default)
 		)
 		(uuid "2c98d042-b94e-4ce9-851a-67e4d7ac620c")
+	)
+	(wire
+		(pts
+			(xy 238.76 109.22) (xy 215.9 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3088e903-3f76-4ea2-8bf1-05e3fae24817")
+	)
+	(wire
+		(pts
+			(xy 215.9 109.22) (xy 200.66 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "32016a10-86eb-4111-a05e-5f980e428071")
 	)
 	(wire
 		(pts
@@ -1374,16 +1817,6 @@
 	)
 	(wire
 		(pts
-			(xy 229.87 127) (xy 243.84 127)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "63b8643a-d3ae-4896-b556-842b3018f5fe")
-	)
-	(wire
-		(pts
 			(xy 111.76 46.99) (xy 111.76 63.5)
 		)
 		(stroke
@@ -1401,6 +1834,16 @@
 			(type default)
 		)
 		(uuid "7c839f80-3282-4cfe-9f5f-4cc54f8e6403")
+	)
+	(wire
+		(pts
+			(xy 232.41 102.87) (xy 238.76 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "807b7460-ec39-4162-bf42-b54f497b13af")
 	)
 	(wire
 		(pts
@@ -1424,23 +1867,13 @@
 	)
 	(wire
 		(pts
-			(xy 243.84 127) (xy 243.84 118.11)
+			(xy 215.9 100.33) (xy 215.9 109.22)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "95c02d78-e8b3-4f47-8b1e-50876d2fe3be")
-	)
-	(wire
-		(pts
-			(xy 229.87 138.43) (xy 212.09 138.43)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "99817e91-437a-48ed-a60f-4d656bb1c14c")
+		(uuid "a005c9f6-333c-4199-a578-694e7572af9c")
 	)
 	(wire
 		(pts
@@ -1454,6 +1887,26 @@
 	)
 	(wire
 		(pts
+			(xy 215.9 100.33) (xy 217.17 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a6dc25a9-0b16-46fa-9779-fb9501728511")
+	)
+	(wire
+		(pts
+			(xy 232.41 97.79) (xy 238.76 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a95f6422-61b7-4f6b-8738-83d829983b92")
+	)
+	(wire
+		(pts
 			(xy 60.96 73.66) (xy 66.04 73.66)
 		)
 		(stroke
@@ -1461,26 +1914,6 @@
 			(type default)
 		)
 		(uuid "abcd0862-c84c-4e18-95cd-8ac8cac98945")
-	)
-	(wire
-		(pts
-			(xy 207.01 129.54) (xy 207.01 120.65)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ae200b78-485d-4f83-b4d6-c51f65d14b05")
-	)
-	(wire
-		(pts
-			(xy 229.87 132.08) (xy 229.87 138.43)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ae48f480-e452-4554-a9bd-4023b3048594")
 	)
 	(wire
 		(pts
@@ -1494,23 +1927,13 @@
 	)
 	(wire
 		(pts
-			(xy 212.09 138.43) (xy 212.09 129.54)
+			(xy 210.82 91.44) (xy 200.66 91.44)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "c34d6997-e96c-4d3d-92ae-29e9eb0a9d3c")
-	)
-	(wire
-		(pts
-			(xy 212.09 129.54) (xy 214.63 129.54)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e3a29585-8aad-4df6-9269-d48af1dafb7a")
+		(uuid "cd77d941-a4b9-481d-a2d9-142513411a25")
 	)
 	(wire
 		(pts
@@ -1544,6 +1967,16 @@
 	)
 	(wire
 		(pts
+			(xy 238.76 102.87) (xy 238.76 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eff06345-7609-4516-8db1-f74dffdce503")
+	)
+	(wire
+		(pts
 			(xy 130.81 66.04) (xy 139.7 66.04)
 		)
 		(stroke
@@ -1561,16 +1994,6 @@
 			(type default)
 		)
 		(uuid "fb617752-b06e-461e-928b-5fbcf5bde244")
-	)
-	(wire
-		(pts
-			(xy 212.09 129.54) (xy 207.01 129.54)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fdf29e78-853e-4dd4-b571-e84464611216")
 	)
 	(wire
 		(pts
@@ -1594,7 +2017,7 @@
 	)
 	(hierarchical_label "5VDC"
 		(shape input)
-		(at 243.84 118.11 90)
+		(at 238.76 97.79 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1605,7 +2028,7 @@
 	)
 	(hierarchical_label "5VDC"
 		(shape input)
-		(at 204.47 105.41 90)
+		(at 210.82 91.44 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1616,7 +2039,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 204.47 120.65 0)
+		(at 209.55 114.3 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1625,7 +2048,7 @@
 		(fields_autoplaced yes)
 		(uuid "03fcc598-e0bc-4fd6-ae7a-a684ab9b165f")
 		(property "Reference" "#PWR018"
-			(at 204.47 127 0)
+			(at 215.9 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1634,15 +2057,16 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 204.47 125.73 0)
+			(at 213.36 114.2999 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
 		(property "Footprint" ""
-			(at 204.47 120.65 0)
+			(at 209.55 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1651,7 +2075,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 204.47 120.65 0)
+			(at 209.55 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1660,7 +2084,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 204.47 120.65 0)
+			(at 209.55 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2468,7 +2892,7 @@
 	)
 	(symbol
 		(lib_id "Amplifier_Operational:LM358")
-		(at 222.25 129.54 0)
+		(at 224.79 100.33 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2477,7 +2901,7 @@
 		(dnp no)
 		(uuid "7d5d09df-b485-4bde-ad9b-13d595cc2211")
 		(property "Reference" "U28"
-			(at 222.25 119.38 0)
+			(at 224.79 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2485,7 +2909,7 @@
 			)
 		)
 		(property "Value" "LM358"
-			(at 222.25 121.92 0)
+			(at 224.79 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2493,7 +2917,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 222.25 129.54 0)
+			(at 224.79 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2502,7 +2926,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf"
-			(at 222.25 129.54 0)
+			(at 224.79 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2511,7 +2935,7 @@
 			)
 		)
 		(property "Description" "Low-Power, Dual Operational Amplifiers, DIP-8/SOIC-8/TO-99-8"
-			(at 222.25 129.54 0)
+			(at 224.79 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2677,43 +3101,43 @@
 		)
 	)
 	(symbol
-		(lib_id "Amplifier_Instrumentation:INA326")
-		(at 204.47 113.03 0)
+		(lib_id "INA350CDSIDSGR:INA350CDSIDSGR")
+		(at 180.34 104.14 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "8fbae65b-5bcb-4435-a293-d4d1a46f2fbb")
-		(property "Reference" "U2"
-			(at 217.17 106.6098 0)
+		(uuid "91fe9a46-8cf0-4270-b787-e5be7dfbdcfe")
+		(property "Reference" "U36"
+			(at 180.34 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "INA326"
-			(at 217.17 109.1498 0)
+		(property "Value" "INA350CDSIDSGR"
+			(at 180.34 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "Package_SO:MSOP-8_3x3mm_P0.65mm"
-			(at 204.47 113.03 0)
+		(property "Footprint" "INA350CDSIDSGR:IC_INA350CDSIDSGR"
+			(at 180.34 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify bottom)
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/ina326.pdf"
-			(at 207.01 113.03 0)
+		(property "Datasheet" ""
+			(at 180.34 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2721,71 +3145,214 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Precision, Rail-to-Rail I/O Instrumentation Amplifier, MSOP-8 package"
-			(at 204.47 113.03 0)
+		(property "Description" ""
+			(at 180.34 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
+			)
+		)
+		(property "MF" "Texas Instruments"
+			(at 180.34 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" "0.8mm"
+			(at 180.34 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Package" "WSON-8 Texas Instruments"
+			(at 180.34 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Price" "None"
+			(at 180.34 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Check_prices" "https://www.snapeda.com/parts/INA350CDSIDSGR/Texas+Instruments/view-part/?ref=eda"
+			(at 180.34 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" "Manufacturer Recommendations"
+			(at 180.34 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" "B"
+			(at 180.34 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "SnapEDA_Link" "https://www.snapeda.com/parts/INA350CDSIDSGR/Texas+Instruments/view-part/?ref=snap"
+			(at 180.34 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MP" "INA350CDSIDSGR"
+			(at 180.34 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Purchase-URL" "https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=12124363&manufacturer=Texas Instruments&part_name=INA350CDSIDSGR&search_term=ina350"
+			(at 180.34 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Description_1" "Low-power (100 µA) selectable-gain instrumentation amplifier available in 8-pin WSON (2 mm by 2 mm)"
+			(at 180.34 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "SNAPEDA_PN" "INA350CDSIDSGR"
+			(at 180.34 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Availability" "In Stock"
+			(at 180.34 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" "Texas Instruments"
+			(at 180.34 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
 				(hide yes)
 			)
 		)
 		(pin "2"
-			(uuid "89544690-6160-4d25-88e5-9c03ce8470c3")
-		)
-		(pin "3"
-			(uuid "b44646a3-e01d-4da5-88f7-18d6364d0f86")
-		)
-		(pin "5"
-			(uuid "3a936b6c-f0a6-46bb-ba03-984072d34381")
-		)
-		(pin "4"
-			(uuid "f875d901-dafb-4d5a-a53a-7761bada399a")
-		)
-		(pin "8"
-			(uuid "59f1bb92-963f-4ad8-9bf8-6cd2eb105c9e")
+			(uuid "45289fb6-396f-491f-b330-96a1b6abf580")
 		)
 		(pin "7"
-			(uuid "61de67b2-ee72-4f6c-a6c3-c39abb08bae0")
+			(uuid "3b5b44b4-40a7-4c53-beb0-0399db65df3e")
 		)
-		(pin "1"
-			(uuid "0de86ee2-23a2-4d29-8837-2488c49e7055")
+		(pin "4"
+			(uuid "d11b7740-d2f6-41cd-84c9-6102e5ef0455")
+		)
+		(pin "8"
+			(uuid "1e11f542-510f-468f-8d1f-6fd28c40417a")
 		)
 		(pin "6"
-			(uuid "b1b6215e-3e59-4b18-98f8-8d69b807cd3c")
+			(uuid "baef74a4-e94b-4814-bb1c-ed9689aca788")
+		)
+		(pin "9"
+			(uuid "14493e26-8c6f-4c62-b4f9-bcfaae6b0b2d")
+		)
+		(pin "3"
+			(uuid "9fe3ea63-2da4-4be7-ae2b-40124a44849a")
+		)
+		(pin "1"
+			(uuid "7ca5a42a-ed8d-4215-8e0d-32be31f62ea7")
+		)
+		(pin "5"
+			(uuid "12c40606-6a41-4dc6-98ea-6c83461021f6")
 		)
 		(instances
 			(project ""
 				(path "/eb20fb8b-6e33-462b-9505-401dab49dd09/c48a3149-0db5-4f51-8f7c-d62a83337e21/1fd7814c-bf78-4168-8615-5c3b0fc9b0ad"
-					(reference "U10")
+					(reference "U43")
 					(unit 1)
 				)
 				(path "/eb20fb8b-6e33-462b-9505-401dab49dd09/c48a3149-0db5-4f51-8f7c-d62a83337e21/38d387e9-625d-463c-9a0f-4cb3349aa826"
-					(reference "U8")
+					(reference "U41")
 					(unit 1)
 				)
 				(path "/eb20fb8b-6e33-462b-9505-401dab49dd09/c48a3149-0db5-4f51-8f7c-d62a83337e21/55a662ea-90fb-421c-a8a2-023fee80625b"
-					(reference "U7")
+					(reference "U40")
 					(unit 1)
 				)
 				(path "/eb20fb8b-6e33-462b-9505-401dab49dd09/c48a3149-0db5-4f51-8f7c-d62a83337e21/6edbc10b-b01d-4def-ba7e-a909c19f70ca"
-					(reference "U5")
+					(reference "U38")
 					(unit 1)
 				)
 				(path "/eb20fb8b-6e33-462b-9505-401dab49dd09/c48a3149-0db5-4f51-8f7c-d62a83337e21/72bb2763-076a-4e12-957a-4da986febf3b"
-					(reference "U6")
+					(reference "U39")
 					(unit 1)
 				)
 				(path "/eb20fb8b-6e33-462b-9505-401dab49dd09/c48a3149-0db5-4f51-8f7c-d62a83337e21/b051ea0c-81d9-4bc7-8142-5402a0c1e1da"
-					(reference "U4")
+					(reference "U37")
 					(unit 1)
 				)
 				(path "/eb20fb8b-6e33-462b-9505-401dab49dd09/c48a3149-0db5-4f51-8f7c-d62a83337e21/b9769e2e-c022-46e5-9c9b-4415c0eab55d"
-					(reference "U2")
+					(reference "U36")
 					(unit 1)
 				)
 				(path "/eb20fb8b-6e33-462b-9505-401dab49dd09/c48a3149-0db5-4f51-8f7c-d62a83337e21/daf83055-0ab7-48b9-a756-ec73eea06236"
-					(reference "U9")
+					(reference "U42")
 					(unit 1)
 				)
 			)
