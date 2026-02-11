@@ -1,16 +1,22 @@
 LTspice 26.0.1 for Windows
-Circuit: C:\Users\ramc9m\Documents\LTspice\BinaryCounter.net
-Start Time: Mon Feb  9 16:04:23 2026
+Circuit: C:\Users\ramc9m\Documents\GitHub\ECE-Capstone-Group-5\Spice\LTSpice\BinaryCounter.net
+Start Time: Wed Feb 11 16:03:39 2026
+C:\Users\ramc9m\Documents\GitHub\ECE-Capstone-Group-5\Spice\LTSpice\BinaryCounter.net(3): Sub-circuit name listed twice. This is most likely because the corresponding symbol contains the name in more than one attribute.
+X§U1 N001 N003 N003 N003 N011 0 0 0 0 N004 N006 N009 N008 N003 N003 0 74HC161 74HC161 ;§pnba 1)2)3)4)5)6)7)8)9)10)11)12)13)14)15)16
+                                                                              ^^^^^^^
+C:\Users\ramc9m\Documents\GitHub\ECE-Capstone-Group-5\Spice\LTSpice\BinaryCounter.net(9): Sub-circuit name listed twice. This is most likely because the corresponding symbol contains the name in more than one attribute.
+X§U2 0 N004 N006 N009 N012 N014 N016 N018 N019 N017 N015 N013 N010 N007 N005 0 74HC151 74HC151 ;§pnba 1)2)3)4)5)6)7)8)9)10)11)12)13)14)15)16
+                                                                                       ^^^^^^^
 solver = Normal
 Maximum thread count: 16
 tnom = 27
 temp = 27
 method = trap
 Direct Newton iteration succeeded in finding operating point.
-Total elapsed time: 0.346 seconds.
+Total elapsed time: 0.587 seconds.
 
 Files loaded:
-C:\Users\ramc9m\Documents\LTspice\BinaryCounter.net
-C:\Users\ramc9m\AppData\Local\LTspice\lib\cmp\standard.dio
-C:\Users\ramc9m\Documents\LTspice\74hc.lib
+C:\Users\ramc9m\Documents\GitHub\ECE-Capstone-Group-5\Spice\LTSpice\BinaryCounter.net
+C:\Users\ramc9m\AppData\Local\LTspice\lib\cmp\standard.bjt
+C:\Users\ramc9m\Documents\GitHub\ECE-Capstone-Group-5\Spice\LTSpice\74hc.lib
 
