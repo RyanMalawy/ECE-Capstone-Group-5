@@ -3643,6 +3643,48 @@
 			)
 		)
 	)
+	(sheet
+		(at 38.1 25.4)
+		(size 12.7 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "c6061944-fcb3-443d-831a-f396f77e4c45")
+		(property "Sheetname" "Battery Charger"
+			(at 38.1 24.6884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "./Hierarchical Sheets/Battery_charging.kicad_sch"
+			(at 38.1 38.6846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Capstone"
+				(path "/eb20fb8b-6e33-462b-9505-401dab49dd09"
+					(page "12")
+				)
+			)
+		)
+	)
 	(sheet_instances
 		(path "/"
 			(page "1")
