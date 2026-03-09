@@ -2265,7 +2265,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Params" "dc=0 ampl=.1 f=100k ac=0"
+		(property "Sim.Params" "dc=0 ampl=.1 f=300k ac=0"
 			(at 92.71 119.126 0)
 			(effects
 				(font

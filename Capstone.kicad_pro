@@ -560,12 +560,120 @@
           "label": "Datasheet",
           "name": "Datasheet",
           "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Check_prices",
+          "name": "Check_prices",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Description_1",
+          "name": "Description_1",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MANUFACTURER",
+          "name": "MANUFACTURER",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MAXIMUM_PACKAGE_HEIGHT",
+          "name": "MAXIMUM_PACKAGE_HEIGHT",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MF",
+          "name": "MF",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MP",
+          "name": "MP",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "PARTREV",
+          "name": "PARTREV",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Package",
+          "name": "Package",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Price",
+          "name": "Price",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "STANDARD",
+          "name": "STANDARD",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Device",
+          "name": "Sim.Device",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Library",
+          "name": "Sim.Library",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Name",
+          "name": "Sim.Name",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Pins",
+          "name": "Sim.Pins",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "SnapEDA_Link",
+          "name": "SnapEDA_Link",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Availability",
+          "name": "Availability",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Description",
+          "name": "Description",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "#",
+          "name": "${ITEM_NUMBER}",
+          "show": false
         }
       ],
       "filter_string": "",
       "group_symbols": true,
       "include_excluded_from_bom": true,
-      "name": "Default Editing",
+      "name": "",
       "sort_asc": true,
       "sort_field": "Reference"
     },
@@ -597,6 +705,14 @@
       "version": 1
     },
     "net_format_name": "",
+    "ngspice": {
+      "fix_include_paths": true,
+      "meta": {
+        "version": 0
+      },
+      "model_mode": 4,
+      "workbook_filename": ""
+    },
     "page_layout_descr_file": "",
     "plot_directory": "",
     "space_save_all_events": true,
@@ -615,44 +731,12 @@
       "Root"
     ],
     [
-      "63552873-13f5-4662-99b3-658344f76857",
-      "Filter"
+      "b20763cf-135f-4c80-a439-1f71268d237b",
+      "SensorReader1"
     ],
     [
-      "b9769e2e-c022-46e5-9c9b-4415c0eab55d",
-      "Amplifier"
-    ],
-    [
-      "c48a3149-0db5-4f51-8f7c-d62a83337e21",
-      "8xAmplifier"
-    ],
-    [
-      "b051ea0c-81d9-4bc7-8142-5402a0c1e1da",
-      "Amplifier1"
-    ],
-    [
-      "6edbc10b-b01d-4def-ba7e-a909c19f70ca",
-      "Amplifier2"
-    ],
-    [
-      "72bb2763-076a-4e12-957a-4da986febf3b",
-      "Amplifier3"
-    ],
-    [
-      "55a662ea-90fb-421c-a8a2-023fee80625b",
-      "Amplifier4"
-    ],
-    [
-      "38d387e9-625d-463c-9a0f-4cb3349aa826",
-      "Amplifier5"
-    ],
-    [
-      "daf83055-0ab7-48b9-a756-ec73eea06236",
-      "Amplifier6"
-    ],
-    [
-      "1fd7814c-bf78-4168-8615-5c3b0fc9b0ad",
-      "Amplifier7"
+      "d1fc981b-0a3d-4bee-b8f0-81f28e3ff9d1",
+      "SensorReader"
     ],
     [
       "c6061944-fcb3-443d-831a-f396f77e4c45",
