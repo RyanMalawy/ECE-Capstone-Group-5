@@ -1,0 +1,289 @@
+*******************************************************************************
+* 1N34 Germanium Diode Model
+* Jim Hagerman (www.hagamps.com), 05/07/21
+.model _1n34 d
++(
++  is  = 0.55u
++  rs  = 6.6
++  cj0 = 1p
++)
+
+*******************************************************************************
+* AC128 Germanium Transistor Model
+* Jim Hagerman (www.hagamps.com), 01/15/20
+.model _ac128 pnp
++(
++  bf  = 90
++  is  = 20u
++  re  = 200m
++  br  = 100m
++  vaf = 30
++  ise = 200n
++  cjc = 100p
++  tf  = 100n
++  tr  = 10u
++)
+
+*******************************************************************************
+* Jim Hagerman, 2/3/20
+.model _bc108c npn
++(
++  bf  = 320
++  is  = 60f
++  rb  = 180
++  vaf = 30
++  ikf = 100m
++  ise = 0.1f
++  tf  = 500n
++  tr  = 1u
++  cjc = 3p
++)
+
+*******************************************************************************
+* Jim Hagerman, 2/10/20
+.model _2n5088 npn
++(
++  bf  = 350
++  is  = 70f
++  rb  = 110
++  rc  = 1
++  br  = 5
++  vaf = 50
++  ikf = 100m
++  ise = 0.2f
++  tf  = 3n
++  tr  = 100p
++  cjc = 10p
++)
+
+*******************************************************************************
+* Jim Hagerman, 11/26/91
+.model _2n3904 npn
++(
++  bf   = 100
++  nf   = 1.00
++  is   = 13.5e-15
++  rb   = 11.1
++  rc   = 2.35
++  nr   = 1.00
++  br   = 1.87
++  vaf  = 90
++  ikf  = 30e-3
++  ne   = 1.36
++  ise  = 122e-15
++  xcjc = 0.8
++  cje  = 4.3e-12
++  vje  = 0.53
++  mje  = 0.25
++  cjc  = 3.5e-12
++  vjc  = 0.18
++  mjc  = 0.41
++  tf   = 531e-12
++  xtf  = 8
++  vtf  = 10
++  itf  = 50e-3
++  tr   = 176e-9
++)
+
+*******************************************************************************
+* Jim Hagerman, 11/19/91
+.model _2n3906 pnp
++(
++  bf   = 100
++  nf   = 1.17
++  is   = 192e-15
++  rb   = 6.5
++  rc   = 2.3
++  nr   = 1.17
++  br   = 0.58
++  vaf  = 57
++  ikf  = 25e-3
++  ne   = 1.26
++  ise  = 260e-15
++  xcjc = 0.8
++  cje  = 9e-12
++  vje  = 0.090
++  mje  = 0.19
++  cjc  = 8e-12
++  vjc  = 0.22
++  mjc  = 0.18
++  tf   = 640e-12
++  xtf  = 8
++  vtf  = 5
++  itf  = 25e-3
++  tr   = 650e-9
++)
+
+*******************************************************************************
+* 2N5485 N channel JFET, Jim Hagerman, 1/22/91
+.model _2n5485 njf
++(
++  vto    = -2.0
++  beta   = 1.8e-3
++  lambda = 8.6e-3
++  cgs    = 5e-12
++  cgd    = 1e-12
++)
+
+*******************************************************************************
+* LSK389, Jim Hagerman, 2007
+.model _2sk389 njf(vto=-0.7 beta=0.02 lambda=11m rs=8 rd=8 cgs=25p cgd=5.5p)
+
+*******************************************************************************
+* Jim Hagerman, 11/7/94
+.model _1n4004 d
++(
++  n   = 1.57
++  is  = 6.1e-10
++  rs  = 0.044
++  tt  = 5.1e-6
++  cjo = 50e-12
++  m   = 0.25
++  vj  = 0.31
++  eg  = 1.11
++  xti = 3.0
++  bv  = 1000
++  ibv = 1e-6
++)
+
+*******************************************************************************
+* 1N4148, Jim Hagerman, 2020
+.model _1n4148 d
++(
++  is  = 70f
++  rs  = 1.5
++  bv  = 100
++  ibv = 100n
++  tt  = 8n
++  cjo = 4p
++)
+
+*******************************************************************************
+* LED red, Jim Hagerman, 2020
+.model _led d
++(
++  is  = 1.5e-36
++  rs  = 7
++  bv  = 5
++  ibv = 10u
++  cjo = 55p
++)
+
+*******************************************************************************
+* 1N751 5.1V zener diode, 11/13/91
+* Call by using:  Xxxxxx  <cathode>  <anode>  _1n751
+.subckt _1n751 1 2
+Dx 1 3 z$dx
+Vx 3 2 dc 4.00
+Dy 2 1 z$dy
+.model z$dy d
++(
++  n = 1.17
++  is = 3.7e-14
++  rs = 1.1
++  cjo = 160e-12
++  m = 0.66
++  vj = 0.78
++  bv = 8.2
++  ibv = 80e-6
++)
+.model z$dx d(rs = 17)
+.ends _1n751
+
+*****************************************************************************
+* Typical LM13700, Hagerman Technology, 1993
+*
+* Call by using:
+* Xxxxx in+ in- diodebias ampbias output bufinput bufoutput Vcc Vee _lm13700
+*       ^   ^   ^         ^       ^      ^        ^         ^   ^
+*       3   4   2         1       5      7        8         11  6
+*
+.subckt _lm13700 3 4 2 1 5 7 8 11 6
+q1 1 21 6 _npn
+q2 20 1 21 _npn
+qd1 21 21 6 _npn
+q4 23 4 20 _npn
+q5 25 3 20 _npn
+qd2 2 2 4 _npn
+qd3 2 2 3 _npn
+q6 23 24 11 _pnp
+q7 27 23 24 _pnp
+qd4 24 24 11 _pnp
+q8 27 28 6 _npn
+q9 5 27 28 _npn
+qd5 28 28 6 _npn
+q10 25 26 11 _pnp
+q11 5 25 26 _pnp
+qd6 26 26 11 _pnp
+q12 11 7 22 _npn
+q13 11 22 8 _npn
+.model _npn npn (bf=100 nf=1 is=10e-15 rb=10 rc=3 nr=1
++ br=0.2 vaf=40 ikf=25e-3 ne=1.8 ise=8e-12 xcjc=0.8 cje=5e-12 vje=0.5
++ mje=0.3 cjc=5e-12 vjc=0.5 mjc=0.3 tf=500e-12 itf=25e-3 tr=1e-6)
+.model _pnp pnp (bf=100 nf=1 is=10e-15 rb=10 rc=3 nr=1
++ br=0.2 vaf=40 ikf=25e-3 ne=1.8 ise=8e-12 xcjc=0.8 cje=5e-12 vje=0.5
++ mje=0.3 cjc=5e-12 vjc=0.5 mjc=0.3 tf=500e-12 itf=25e-3 tr=1e-6)
+.ends _lm13600
+
+*****************************************************************************
+* Typical LM3900, Hagerman Technology, 2020
+*
+* Call by using:
+* Xxxxx in+ in- output Vcc Vee _lm3900
+*       ^   ^   ^      ^   ^
+*       2   3   4      14  7
+*
+.subckt _lm3900 2 3 4 14 7
+Qd1 2 2 7 _npn
+Q1 3 2 7 _npn
+Q2 20 3 7 _npn
+C2 20 0 10p
+Q3 7 20 4 _pnp
+Q4 4 20 21 _pnp
+Q5 14 21 4 _npn
+I4 14 21 200u
+I5 4 7 1.3m
+.model _npn npn (bf=100 nf=1 is=10e-15 rb=10 rc=3 nr=1
++ br=0.2 vaf=40 ikf=25e-3 ne=1.8 ise=8e-12 xcjc=0.8 cje=5e-12 vje=0.5
++ mje=0.3 cjc=5e-12 vjc=0.5 mjc=0.3 tf=500e-12 itf=25e-3 tr=1e-6)
+.model _pnp pnp (bf=100 nf=1 is=10e-15 rb=10 rc=3 nr=1
++ br=0.2 vaf=40 ikf=25e-3 ne=1.8 ise=8e-12 xcjc=0.8 cje=5e-12 vje=0.5
++ mje=0.3 cjc=5e-12 vjc=0.5 mjc=0.3 tf=500e-12 itf=25e-3 tr=1e-6)
+.ends _lm3900
+
+ *****************************************************************************
+* Typical LM386, Hagerman Technology, 2020
+*
+* Call by using:
+* Xxxxx in+ in- output vcc vee bypass gain8 gain1 _lm386
+*       ^   ^   ^      ^   ^   ^      ^     ^     ^
+*       3   2   5      6   4   7      8     1
+*
+.subckt _lm386 3 2 5 6 4 7 8 1
+R1 2 4 50k
+R2 3 4 50k
+Q1 4 2 10 _pnp
+Q2 4 3 13 _pnp
+Q3 11 10 18 _pnp
+Q4 12 13 1 _pnp
+Q5 11 11 4 _npn
+Q6 12 11 4 _npn
+R3 18 8 150
+R4 1 8 1.35k
+R5 7 18 15k
+R6 6 7 15k
+R7 5 1 15k
+Q7 14 12 4 _npn
+Ibias 6 16 1m
+Q8 16 16 15 _npn
+Q9 14 14 15 _pnp
+Q10 6 16 5 _npn
+Q11 17 14 5 _pnp
+Q12 5 17 4 _npn
+.model _npn npn (bf=100 nf=1 is=10e-15 rb=10 rc=3 nr=1
++ br=0.2 vaf=40 ikf=25e-3 ne=1.8 ise=8e-12 xcjc=0.8 cje=5e-12 vje=0.5
++ mje=0.3 cjc=5e-12 vjc=0.5 mjc=0.3 tf=500e-12 itf=25e-3 tr=1e-6)
+.model _pnp pnp (bf=100 nf=1 is=10e-15 rb=10 rc=3 nr=1
++ br=0.2 vaf=40 ikf=25e-3 ne=1.8 ise=8e-12 xcjc=0.8 cje=5e-12 vje=0.5
++ mje=0.3 cjc=5e-12 vjc=0.5 mjc=0.3 tf=500e-12 itf=25e-3 tr=1e-6)
+.ends _lm386
