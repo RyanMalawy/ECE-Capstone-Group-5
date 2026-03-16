@@ -2110,7 +2110,7 @@
 		(dnp no)
 		(uuid "21b53697-b0d5-4a52-a0cc-92027e659416")
 		(property "Reference" "U13"
-			(at 175.26 82.4798 0)
+			(at 166.116 82.804 0)
 			(effects
 				(font
 					(size 1.27 1.27)

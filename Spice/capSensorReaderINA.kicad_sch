@@ -2700,7 +2700,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Library" "C:\\group5_repo\\ECE-Capstone-Group-5\\Libs\\sbom763\\INA128_TINA_AIO\\INA128.LIB"
+		(property "Sim.Library" "C:\\Users\\ramc9m\\Documents\\GitHub\\ECE-Capstone-Group-5\\Libs\\sbom763\\INA128_TINA_AIO\\INA128.LIB"
 			(at 134.62 85.09 0)
 			(effects
 				(font
@@ -2822,7 +2822,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Library" "C:\\group5_repo\\ECE-Capstone-Group-5\\Libs\\snom268c\\lmx58_lm2904.lib"
+		(property "Sim.Library" "C:\\Users\\ramc9m\\Documents\\GitHub\\ECE-Capstone-Group-5\\Libs\\snom268c\\lmx58_lm2904.lib"
 			(at 96.52 69.85 0)
 			(effects
 				(font
@@ -3349,7 +3349,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Library" "C:\\group5_repo\\ECE-Capstone-Group-5\\Libs\\snom268c\\lmx58_lm2904.lib"
+		(property "Sim.Library" "C:\\Users\\ramc9m\\Documents\\GitHub\\ECE-Capstone-Group-5\\Libs\\snom268c\\lmx58_lm2904.lib"
 			(at 95.25 97.79 0)
 			(effects
 				(font
@@ -3747,7 +3747,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Library" "C:\\group5_repo\\ECE-Capstone-Group-5\\Libs\\snom268c\\lmx58_lm2904.lib"
+		(property "Sim.Library" "C:\\Users\\ramc9m\\Documents\\GitHub\\ECE-Capstone-Group-5\\Libs\\snom268c\\lmx58_lm2904.lib"
 			(at 250.19 87.63 0)
 			(effects
 				(font
@@ -3774,7 +3774,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Pins" "1=OUT1 2=IN1- 3=IN1+ 4=VEE 5=IN2+ 6=IN2- 7=OUT2 8=VCC"
+		(property "Sim.Pins" "1=OUT1 2=IN1- 4=VEE 5=IN1+ 5=IN2+ 6=IN2- 7=OUT2 8=VCC"
 			(at 250.19 87.63 0)
 			(effects
 				(font
@@ -3937,7 +3937,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Library" "C:\\group5_repo\\ECE-Capstone-Group-5\\Libs\\snom268c\\lmx58_lm2904.lib"
+		(property "Sim.Library" "C:\\Users\\ramc9m\\Documents\\GitHub\\ECE-Capstone-Group-5\\Libs\\snom268c\\lmx58_lm2904.lib"
 			(at 27.94 91.44 0)
 			(effects
 				(font
@@ -3964,7 +3964,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Pins" "1=OUT1 2=IN1- 3=IN1+ 4=VEE 5=IN2+ 6=IN2- 7=OUT2 8=VCC"
+		(property "Sim.Pins" "1=OUT1 2=IN1- 4=VEE 5=IN1+ 5=IN2+ 6=IN2- 7=OUT2 8=VCC"
 			(at 27.94 91.44 0)
 			(effects
 				(font
@@ -4196,7 +4196,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Library" "C:\\group5_repo\\ECE-Capstone-Group-5\\Libs\\snom268c\\lmx58_lm2904.lib"
+		(property "Sim.Library" "C:\\Users\\ramc9m\\Documents\\GitHub\\ECE-Capstone-Group-5\\Libs\\snom268c\\lmx58_lm2904.lib"
 			(at 27.94 99.06 0)
 			(effects
 				(font
@@ -4336,7 +4336,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Library" "C:\\group5_repo\\ECE-Capstone-Group-5\\Libs\\DIODE\\diodes.lib"
+		(property "Sim.Library" "C:\\Users\\ramc9m\\Documents\\GitHub\\ECE-Capstone-Group-5\\Libs\\DIODE\\diodes.lib"
 			(at 154.94 85.09 0)
 			(effects
 				(font
