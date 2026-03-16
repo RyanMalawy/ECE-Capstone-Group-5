@@ -907,6 +907,98 @@
 		)
 	)
 	(sheet
+		(at 114.3 50.8)
+		(size 12.7 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "cbeb60be-bbfd-4ac8-b3f3-a961291f895e")
+		(property "Sheetname" "SensorReader1"
+			(at 114.3 50.0884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Hierarchical Sheets/capSensorReader.kicad_sch"
+			(at 114.3 64.0846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "GND" input
+			(at 120.65 63.5 270)
+			(uuid "3e6ad926-8002-45b2-848c-6f91ff2d47a7")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "V+" input
+			(at 114.3 60.96 180)
+			(uuid "006adbf5-0cbf-4ed1-a9e6-83f69e963a71")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "V-" input
+			(at 114.3 53.34 180)
+			(uuid "4355dded-eae3-4c46-8c3e-ab6ade665967")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "Vsin" input
+			(at 114.3 57.15 180)
+			(uuid "1c4d61b3-d4e1-4e3f-816c-39dc6a8741c3")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "Vout" input
+			(at 127 57.15 0)
+			(uuid "76793540-1131-4618-bf76-5ed1eca53ea6")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "Capstone"
+				(path "/eb20fb8b-6e33-462b-9505-401dab49dd09"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
 		(at 114.3 25.4)
 		(size 12.7 12.7)
 		(exclude_from_sim no)
@@ -938,6 +1030,56 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "GND" input
+			(at 120.65 38.1 270)
+			(uuid "2842e383-14d1-4914-9190-9e364055d04c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "V+" input
+			(at 114.3 35.56 180)
+			(uuid "40854d2d-9e9e-47a4-9cc4-edb24bbd70d9")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "V-" input
+			(at 114.3 27.94 180)
+			(uuid "17c0c75e-af50-4012-aba2-8656b0520c49")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "Vsin" input
+			(at 114.3 31.75 180)
+			(uuid "d17c95fd-fedc-4f3e-86ae-8b8eba63e631")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "Vout" input
+			(at 127 31.75 0)
+			(uuid "a0e277c6-8e65-4948-b734-bdd92fd966fc")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 		(instances
