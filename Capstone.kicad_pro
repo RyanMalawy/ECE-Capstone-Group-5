@@ -60,30 +60,6 @@
       ],
       "drc_exclusions": [
         [
-          "clearance|166800000|114550000|7e79f5d4-1e21-410d-8813-3dea8cb7526a|708ea036-2abe-44f6-a411-779bbf87c6b4",
-          ""
-        ],
-        [
-          "clearance|166800000|115200000|5a574eae-97fd-4d6b-9a4e-c9d2fa94df46|7e79f5d4-1e21-410d-8813-3dea8cb7526a",
-          ""
-        ],
-        [
-          "clearance|166800000|115850000|866706b8-17ef-456f-bfc2-abc3220597b6|5a574eae-97fd-4d6b-9a4e-c9d2fa94df46",
-          ""
-        ],
-        [
-          "clearance|169075000|114150000|b6f0d93a-d1a2-42c7-b363-83e48e7d541a|f6f8af7c-3afe-4089-9431-523e6aff393f",
-          ""
-        ],
-        [
-          "clearance|169075000|114800000|f6f8af7c-3afe-4089-9431-523e6aff393f|e2acf7d0-d14c-4c4b-87c0-d5784811a621",
-          ""
-        ],
-        [
-          "clearance|169075000|115450000|e2acf7d0-d14c-4c4b-87c0-d5784811a621|03abfa9a-bf5b-4f4c-8096-4eb48166cc93",
-          ""
-        ],
-        [
           "unresolved_variable|142860000|101260000|ea6f9328-af58-4fe0-b8c5-2c6d688b102d|00000000-0000-0000-0000-000000000000",
           ""
         ]
@@ -780,6 +756,10 @@
     [
       "d1fc981b-0a3d-4bee-b8f0-81f28e3ff9d1",
       "SensorReader"
+    ],
+    [
+      "ec192761-1408-4cb5-9629-e45c7071e473",
+      "Ref Sensor"
     ],
     [
       "c6061944-fcb3-443d-831a-f396f77e4c45",
