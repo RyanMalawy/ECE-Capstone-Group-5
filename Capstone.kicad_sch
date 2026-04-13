@@ -408,7 +408,7 @@
 	)
 	(rectangle
 		(start 111.76 21.59)
-		(end 167.64 86.36)
+		(end 167.64 68.58)
 		(stroke
 			(width 0)
 			(type default)
@@ -429,12 +429,6 @@
 		(uuid "4ff56d42-cd77-4e05-bc0f-27861fb47bbd")
 	)
 	(junction
-		(at 104.14 53.34)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "36c189a4-79f5-45f8-ae05-ea2614e8f9a4")
-	)
-	(junction
 		(at 104.14 27.94)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -447,28 +441,10 @@
 		(uuid "82d9c61c-9f11-4309-a4d1-da9073fa54e6")
 	)
 	(junction
-		(at 109.22 83.82)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "96690d68-0d64-40da-8452-7e67990d9230")
-	)
-	(junction
 		(at 81.28 80.01)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a6743d31-356d-4ff0-8bfc-4c60d92ac22f")
-	)
-	(junction
-		(at 106.68 80.01)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a6e2538c-9566-47da-bd4f-daf28c905c1b")
-	)
-	(junction
-		(at 101.6 57.15)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "bbfb59e9-347d-4bf4-a799-3838e5e7cd3c")
 	)
 	(junction
 		(at 109.22 66.04)
@@ -528,36 +504,6 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 72.39) (xy 104.14 53.34)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "02421ba4-20c1-4090-bdaf-8966abb30848")
-	)
-	(wire
-		(pts
-			(xy 101.6 57.15) (xy 101.6 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "077b24e5-07cf-4e20-a2f8-acc802b19983")
-	)
-	(wire
-		(pts
-			(xy 106.68 80.01) (xy 114.3 80.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2874c163-2226-46aa-aeeb-ead954320250")
-	)
-	(wire
-		(pts
 			(xy 104.14 27.94) (xy 114.3 27.94)
 		)
 		(stroke
@@ -605,16 +551,6 @@
 			(type default)
 		)
 		(uuid "2fded3af-affc-48e7-8a65-3eacfb184440")
-	)
-	(wire
-		(pts
-			(xy 114.3 72.39) (xy 104.14 72.39)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "331c8e9f-9b11-4189-b08b-eca9674fc2ce")
 	)
 	(wire
 		(pts
@@ -755,26 +691,6 @@
 			(type default)
 		)
 		(uuid "8bb57b96-cef7-4bd5-a089-f7059b48bde2")
-	)
-	(wire
-		(pts
-			(xy 120.65 83.82) (xy 120.65 82.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8c8625c9-d5c4-4502-a2d4-8ffaa5e6289c")
-	)
-	(wire
-		(pts
-			(xy 109.22 83.82) (xy 120.65 83.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8cd6b30b-c49c-42b0-a8cc-9e6dbd45da94")
 	)
 	(wire
 		(pts
@@ -945,16 +861,6 @@
 			(type default)
 		)
 		(uuid "fde2e335-d85f-4e53-ba64-cd2d66b13f78")
-	)
-	(wire
-		(pts
-			(xy 101.6 76.2) (xy 114.3 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ff38e913-0bc2-4812-b1fc-121aa14da626")
 	)
 	(symbol
 		(lib_id "Seeed_Studio_XIAO_Series:XIAO-ESP32-S3-DIP")
@@ -1216,16 +1122,6 @@
 				(justify right)
 			)
 		)
-		(pin "Ref" input
-			(at 127 53.34 0)
-			(uuid "90f64039-b5fb-4e26-aa5d-9bd5c2f751d3")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
 		(instances
 			(project "Capstone"
 				(path "/eb20fb8b-6e33-462b-9505-401dab49dd09"
@@ -1318,112 +1214,10 @@
 				(justify right)
 			)
 		)
-		(pin "Ref" input
-			(at 127 27.94 0)
-			(uuid "61c0b2aa-df79-4a5d-8d87-cc90069aad39")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
 		(instances
 			(project "Capstone"
 				(path "/eb20fb8b-6e33-462b-9505-401dab49dd09"
 					(page "3")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 114.3 69.85)
-		(size 12.7 12.7)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "ec192761-1408-4cb5-9629-e45c7071e473")
-		(property "Sheetname" "Ref Sensor"
-			(at 114.3 69.1384 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "Hierarchical Sheets/RefSensor.kicad_sch"
-			(at 114.3 83.1346 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(pin "V+" input
-			(at 114.3 80.01 180)
-			(uuid "0df6bb71-9f9b-413c-8d59-200c010ea16e")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "V-" input
-			(at 114.3 72.39 180)
-			(uuid "2deccc75-9eb7-4266-8278-860cb9ebd2c2")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "Vout" input
-			(at 127 76.2 0)
-			(uuid "0fd8754c-d231-4534-934f-fb39c8f0bf70")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "Vsin" input
-			(at 114.3 76.2 180)
-			(uuid "b8e40bfc-ce99-4e59-bffe-422a1c4e3dba")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "GND" input
-			(at 120.65 82.55 270)
-			(uuid "71165d73-3043-4a9e-a5ca-4779846297d5")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(instances
-			(project "Capstone"
-				(path "/eb20fb8b-6e33-462b-9505-401dab49dd09"
-					(page "5")
 				)
 			)
 		)
